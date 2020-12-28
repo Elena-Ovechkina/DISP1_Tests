@@ -40,7 +40,7 @@ fs.readdirSync(testDir).filter(function (file) {
 //  .\tests\system.test.js    ||   tests\system.test.js - относительный путь. (определяется относительно чего либо (в данном случае от программы, которая оперирует этими файлами))
 // Run the tests.
 mocha
-    .timeout(99999)
+    // .timeout(99999)
     .run(function (failures) {
         process.exitCode = failures ? 1 : 0;  // exit with non-zero status if there were failures
     });
