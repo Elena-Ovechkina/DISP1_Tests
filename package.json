@@ -4,7 +4,7 @@
   "private": true,
   "main": "app.js",
   "scripts": {
-    "start": "node app.js",
+    "start": "node app.js --exit",
     "test": "mocha --recursive --exit tests",
     "test:coverage": "nyc --reporter=lcov npm test",
     "test:unit": "mocha --recursive test/middleware test/models test/routes",
